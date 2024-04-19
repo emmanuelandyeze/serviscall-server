@@ -25,7 +25,7 @@ if (process.env.NODE_ENV === 'development') {
 app.use(express.json())
 app.use(
 	cors({
-		origin: 'https://serviscall.vercel.app',
+		origin: ['https://serviscall.vercel.app', 'https://www.serviscall.com'],
 		methods: ['GET', 'POST', 'PUT', 'DELETE'],
 	}),
 );
